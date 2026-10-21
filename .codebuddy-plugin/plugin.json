@@ -1,0 +1,52 @@
+{
+  "name": "advanced-packaging-expert",
+  "version": "1.0.0",
+  "description": "Advanced semiconductor packaging expert covering 2.5D/3D heterogeneous integration, TSV and hybrid bonding, ABF and glass substrates, warpage and thermal-stress control, yield and failure analysis, reliability qualification, capacity bottlenecks and domestic equipment/material substitution.",
+  "author": {
+    "name": "dzp",
+    "email": "dzp181@users.noreply.github.com"
+  },
+  "agents": ["./agents/advanced-packaging-expert.md"],
+
+  "expertType": "agent",
+  "agentName": "advanced-packaging-expert",
+
+  "displayName": {
+    "en": "Advanced Packaging Expert",
+    "zh": "先进封装专家"
+  },
+  "profession": {
+    "en": "Advanced Semiconductor Packaging Engineer",
+    "zh": "先进封装工艺工程师"
+  },
+  "displayDescription": {
+    "en": "Covers 2.5D/3D heterogeneous integration, TSV and hybrid bonding, warpage and thermal-stress control, yield and failure analysis, and equipment-material bottlenecks.",
+    "zh": "覆盖2.5D/3D异构集成、TSV与混合键合工艺、翘曲与热应力管控、良率失效分析及设备材料卡点。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "我要做一颗AI加速器的2.5D封装，硅中介层加12层HBM4，CoWoS类方案，帮我把工艺路线、翘曲风险、良率拆解和产能瓶颈一起过一遍。",
+    "en": "I am designing a 2.5D package for an AI accelerator: silicon interposer with 12 HBM4 stacks in a CoWoS-class scheme. Walk me through process route, warpage risk, yield decomposition and capacity bottlenecks."
+  },
+  "plugin": "advanced-packaging-expert",
+  "tags": [
+    { "en": "Heterogeneous Integration & Chiplet", "zh": "异构集成与Chiplet" },
+    { "en": "Packaging Process & Yield", "zh": "封装工艺与良率" },
+    { "en": "Reliability & Failure Analysis", "zh": "可靠性与失效分析" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "I am designing a 2.5D package for an AI accelerator: silicon interposer with 12 HBM4 stacks in a CoWoS-class scheme. Walk me through process route, warpage risk, yield decomposition and capacity bottlenecks.",
+      "zh": "我要做一颗AI加速器的2.5D封装，硅中介层加12层HBM4，CoWoS类方案，帮我把工艺路线、翘曲风险、良率拆解和产能瓶颈一起过一遍。"
+    },
+    {
+      "en": "Compare the routes for a new product: 2.5D silicon interposer vs RDL interposer vs 3D hybrid bonding. Give me cost, yield, design-rule and supply-chain tradeoffs, and tell me when each one wins.",
+      "zh": "新产品要做路线选型：2.5D硅中介层、RDL中介层、3D混合键合这三条路，请从成本、良率、设计规则和供应链四个维度对比，并说明各自在什么场景胜出。"
+    },
+    {
+      "en": "Our 2.5D package shows 3-4% warpage after molding and fails TCT at cycle 3. Give me a root-cause tree covering CTE mismatch, underfill voids, RDL stress and TSV fatigue, plus the tests that discriminate between them.",
+      "zh": "我们的2.5D封装成型后翘曲3~4%，TCT在第3个循环就失效，请给一份根因树，覆盖CTE失配、底填空洞、RDL应力与TSV疲劳，并列出能区分这些假设的验证手段。"
+    }
+  ]
+}
